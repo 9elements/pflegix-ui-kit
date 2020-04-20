@@ -1,0 +1,28 @@
+{
+  "name": "pflegix-ui-kit",
+  "version": "1.0.0",
+  "description": "pflegix-ui-kit",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sass-watch": "^0.1.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1",
+    "nodemon": "^2.0.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9elements/pflegix-ui-kit.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9elements/pflegix-ui-kit/issues"
+  },
+  "homepage": "https://github.com/9elements/pflegix-ui-kit#readme"
+}
