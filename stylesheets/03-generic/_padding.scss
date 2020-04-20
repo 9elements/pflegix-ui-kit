@@ -1,0 +1,11 @@
+.g-padding {
+  padding: 2.5rem;
+
+  &--horizontal {
+    padding: 0 2.5rem;
+  }
+
+  &--vertical {
+    padding: 2.5rem 0;
+  }
+}

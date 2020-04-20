@@ -1,0 +1,58 @@
+.c-input {
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  color: $color-black;
+  line-height: 1.5;
+  padding: 0.625em 0.875em;
+  height: calc(1.5rem + 1.25rem + 2px);
+  width: 100%;
+  border: 1px solid $color-blue;
+  background-color: $color-white;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0;
+  flex-grow: 1;
+
+  &:focus {
+    box-shadow: 0 0 6px rgba($color-blue, 0.5);
+    outline: none;
+    outline-offset: -4px;
+    border: 1px dashed $color-blue;
+  }
+
+  &:invalid,
+  &.c-input--invalid {
+    border-color: $color-warning;
+    box-shadow: 0 0 4px rgba($color-warning, 0.5);
+    color: $color-warning;
+  }
+
+  &[readonly] {
+    background: transparent;
+    border-color: $color-gray;
+  }
+
+  &[disabled],
+  &.c-input--disabled {
+    background: $color-gray;
+
+    &:focus {
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+
+  &--condensed {
+    padding: 0.3125em 0.625em;
+    height: calc(1.5rem + 0.625rem + 2px);
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+}

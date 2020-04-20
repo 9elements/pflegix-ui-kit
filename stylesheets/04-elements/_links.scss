@@ -1,0 +1,8 @@
+a {
+  @include on-event {
+    color: $color-black;
+  }
+
+  color: $color-secondary;
+  transition: color ease .2s;
+}

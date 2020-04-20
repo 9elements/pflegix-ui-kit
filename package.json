@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "pflegix-ui-kit",
   "dependencies": {
-    "express": "^4.17.1",
     "sass-watch": "^0.1.0"
   },
   "devDependencies": {
@@ -12,7 +11,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "build-css": "node-sass --include-path scss stylesheets/main.scss   public/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {

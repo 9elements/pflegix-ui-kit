@@ -1,0 +1,53 @@
+.c-btn {
+  $block: &;
+  transition: all ease .2s;
+
+  display: inline-block;
+  padding: 0.78125rem 1.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  color: $color-white;
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(2px);
+  }
+
+  &--block {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--primary {
+    background-color: $color-primary;
+
+    @include on-event {
+      background-color: darken($color: $color-primary, $amount: 10%);
+      outline: none;
+    }
+
+    &#{$block}--active {
+      border: 1px dashed $color-primary;
+      background-color: $color-white;
+      color: $color-primary;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+
+    @include on-event {
+      background-color: darken($color: $color-secondary, $amount: 10%);
+    }
+
+    &#{$block}--active {
+      border: 1px dashed $color-secondary;
+      background-color: $color-white;
+      color: $color-secondary;
+    }
+  }
+}
