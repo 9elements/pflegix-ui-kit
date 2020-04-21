@@ -29,7 +29,7 @@
       padding: $spacing-xl/2 0;
     }
 
-    &--space-xs, &--space-md, &--space-lg, &--space-xl{
+    &--space-xs, &--space-md, &--space-lg, &--space-xl {
       &:first-child {
         padding-top: 0;
       }
@@ -45,6 +45,10 @@
     #{$block}__item {
       &--space-xs {
         padding: 0 $spacing-xs/2;
+      }
+
+      &--space-sm {
+        padding: 0 $spacing-sm/2;
       }
 
       &--space-md {

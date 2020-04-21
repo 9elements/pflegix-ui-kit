@@ -430,6 +430,8 @@ a {
     flex-direction: row; }
     .o-stack--horizontal .o-stack__item--space-xs {
       padding: 0 0.25rem; }
+    .o-stack--horizontal .o-stack__item--space-sm {
+      padding: 0 0.5rem; }
     .o-stack--horizontal .o-stack__item--space-md {
       padding: 0 0.75rem; }
     .o-stack--horizontal .o-stack__item--space-lg {
@@ -452,6 +454,17 @@ a {
     flex-wrap: wrap; }
     .o-stack--wrap > * {
       margin-bottom: 0.25rem; }
+
+.c-avatar {
+  position: relative;
+  width: 3.5rem;
+  height: 3.5rem;
+  padding: 0;
+  margin: 0; }
+  .c-avatar__badge {
+    position: absolute;
+    top: -0.375rem;
+    right: -0.375rem; }
 
 .c-badge {
   transition: all ease .2s;
