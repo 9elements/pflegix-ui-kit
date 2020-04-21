@@ -533,6 +533,62 @@ a {
     display: block;
     width: 100%; }
 
+.c-checkbox {
+  display: flex;
+  align-items: center;
+  line-height: 1.375rem;
+  cursor: pointer;
+  padding: 0.625em 0 0.625em 4px;
+  margin-left: -4px;
+  overflow: hidden;
+  min-width: 6em;
+  opacity: 1;
+  transition: opacity 0.2s ease-out; }
+  .c-checkbox--disabled {
+    opacity: 0.5;
+    cursor: default; }
+  .c-checkbox--readonly {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default; }
+  .c-checkbox--no-label {
+    display: inline;
+    min-width: 2em; }
+  .c-checkbox svg {
+    width: 1.375em;
+    height: 1.375em;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.6em;
+    overflow: visible; }
+    .c-checkbox svg .tick {
+      stroke-dasharray: 20px;
+      stroke-dashoffset: 20px;
+      transition: stroke-dashoffset 0.2s ease-out; }
+    .c-checkbox svg rect {
+      fill: white;
+      transition: fill 0.2s ease-out; }
+  .c-checkbox input {
+    position: absolute;
+    width: 1.375em;
+    height: 1.375em;
+    opacity: 0;
+    cursor: pointer; }
+    .c-checkbox input:disabled {
+      pointer-events: none; }
+  .c-checkbox input:checked + svg rect {
+    fill: #134F5C; }
+  .c-checkbox input:checked + svg .tick {
+    stroke-dashoffset: 0; }
+  .c-checkbox input:focus + svg {
+    outline: 1px dashed #134F5C;
+    outline-offset: 2px; }
+  .c-checkbox span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
 .c-headline {
   font-weight: 700;
   margin: 0;
@@ -619,6 +675,55 @@ a {
   cursor: pointer;
   padding: 0;
   margin-bottom: 0.5rem; }
+
+.c-radio {
+  display: flex;
+  align-items: center;
+  line-height: 1.375rem;
+  cursor: pointer;
+  padding: 0.625em 0 0.625em 4px;
+  margin-left: -4px;
+  overflow: hidden;
+  min-width: 6em;
+  opacity: 1;
+  transition: opacity 0.2s ease-out; }
+  .c-radio--disabled {
+    opacity: 0.5;
+    cursor: default; }
+  .c-radio--readonly {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: default; }
+  .c-radio--no-label {
+    display: inline;
+    min-width: 2em; }
+  .c-radio svg {
+    width: 1.375em;
+    height: 1.375em;
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 0.6em;
+    overflow: visible; }
+    .c-radio svg .circle {
+      transition: r 0.2s ease-out; }
+  .c-radio input {
+    position: absolute;
+    width: 1.375em;
+    height: 1.375em;
+    opacity: 0;
+    cursor: pointer; }
+    .c-radio input:disabled {
+      pointer-events: none; }
+  .c-radio input:checked + svg .circle {
+    r: 6; }
+  .c-radio input:focus + svg {
+    outline: 1px dashed #134F5C;
+    outline-offset: 2px; }
+  .c-radio span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 .c-text {
   margin: 0;
