@@ -1,53 +1,64 @@
-.c-btn {
+.c-button {
   $block: &;
   transition: all ease .2s;
 
   display: inline-block;
-  padding: 0.78125rem 1.25rem;
+  padding: 0.75rem 1rem;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 500;
   text-decoration: none;
   border: 1px solid transparent;
   border-radius: $border-radius;
-  color: $color-white;
+  color: $color-black;
+  background-color: $color-primary;
+  text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 
-  &:active {
-    transform: translateY(2px);
+  &:hover:not([disabled]) {
+    outline: none;
+    background-color: lighten($color: $color-primary, $amount: 10%);
+  }
+
+  &:focus, &:active {
+    outline:none;
+    background-color: lighten($color: $color-primary, $amount: 10%);
+    border-color: $color-black;
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-white;
+
+    &:hover:not([disabled]) {
+      background-color: lighten($color: $color-secondary, $amount: 10%);
+      color: $color-white;
+    }
+
+    &:focus, &:active {
+      background-color: lighten($color: $color-secondary, $amount: 10%);
+      color: $color-white;
+    }
+  }
+
+  &--ghost {
+    border: 1px solid $color-gray-70;
+    background: $color-white;
+    color: $color-gray-70;
+
+    &:hover:not([disabled]) {
+      color: $color-gray-70;
+      background: $color-silver;
+    }
+
+    &:focus, &:active {
+      color: $color-gray-70;
+      background-color: $color-silver;
+    }
   }
 
   &--block {
     display: block;
     width: 100%;
-    text-align: center;
-  }
-
-  &--primary {
-    background-color: $color-primary;
-
-    @include on-event {
-      background-color: darken($color: $color-primary, $amount: 10%);
-      outline: none;
-    }
-
-    &#{$block}--active {
-      border: 1px dashed $color-primary;
-      background-color: $color-white;
-      color: $color-primary;
-    }
-  }
-
-  &--secondary {
-    background-color: $color-secondary;
-
-    @include on-event {
-      background-color: darken($color: $color-secondary, $amount: 10%);
-    }
-
-    &#{$block}--active {
-      border: 1px dashed $color-secondary;
-      background-color: $color-white;
-      color: $color-secondary;
-    }
   }
 }

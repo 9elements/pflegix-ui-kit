@@ -1,14 +1,8 @@
-.divider {
+hr {
   height: 1px;
   width: 100%;
-  background-color: $color-silver-30;
   border: none;
   padding: 0;
   margin: 0;
-
-  &--horizontal {
-    height: auto;
-    width: 1px;
-    flex-shrink: 0;
-  }
+  border-bottom: 1px solid $color-silver-30;
 }

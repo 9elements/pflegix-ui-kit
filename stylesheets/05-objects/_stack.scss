@@ -70,16 +70,18 @@
     }
   }
 
-  &--left {
+  &--start {
     align-items: flex-start;
   }
 
-  &--right {
+  &--end {
     align-items: flex-end;
   }
 
-  &--center {
+  &--align-center {
     align-items: center;
+  }
+  &--justify-center {
     justify-content: center;
   }
 
