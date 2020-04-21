@@ -1,5 +1,11 @@
 .c-label {
-  color: $color-gray;
+  font-size: 1.125rem;
+  color: $color-gray-60;
+  font-weight: $font-weight-bold;
   display: flex;
   align-items: center;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: $spacing-xs;
 }

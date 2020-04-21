@@ -26,6 +26,11 @@
     border-color: $color-black;
   }
 
+  &[disabled] {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
   &--secondary {
     background-color: $color-secondary;
     color: $color-white;
@@ -37,6 +42,10 @@
 
     &:focus, &:active {
       background-color: lighten($color: $color-secondary, $amount: 10%);
+      color: $color-white;
+    }
+
+    &[disabled] {
       color: $color-white;
     }
   }
@@ -54,6 +63,10 @@
     &:focus, &:active {
       color: $color-gray-70;
       background-color: $color-silver;
+    }
+
+    &[disabled] {
+      color: $color-gray-70;
     }
   }
 

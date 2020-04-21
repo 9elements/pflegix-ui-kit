@@ -25,9 +25,13 @@
     align-items: center;
     justify-content: center; }
 
-.g-form-group {
-  display: grid;
-  grid-template-columns: 6.25rem auto; }
+.g-input-group--inline {
+  display: flex;
+  align-items: center; }
+  .g-input-group--inline .c-label {
+    white-space: nowrap;
+    padding-right: 0.5em;
+    margin-bottom: 0; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -397,7 +401,8 @@ a {
   width: 100%;
   max-width: 75rem;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  padding: 1em; }
 
 /* ==========================================================================
    #WRAPPER-OBJECT
@@ -498,6 +503,9 @@ a {
     outline: none;
     background-color: #ddfff7;
     border-color: #191919; }
+  .c-button[disabled] {
+    pointer-events: none;
+    opacity: 0.5; }
   .c-button--secondary {
     background-color: #134F5C;
     color: #fff; }
@@ -506,6 +514,8 @@ a {
       color: #fff; }
     .c-button--secondary:focus, .c-button--secondary:active {
       background-color: #1c7386;
+      color: #fff; }
+    .c-button--secondary[disabled] {
       color: #fff; }
   .c-button--ghost {
     border: 1px solid #666666;
@@ -517,6 +527,8 @@ a {
     .c-button--ghost:focus, .c-button--ghost:active {
       color: #666666;
       background-color: #EFEFEF; }
+    .c-button--ghost[disabled] {
+      color: #666666; }
   .c-button--block {
     display: block;
     width: 100%; }
@@ -568,7 +580,7 @@ a {
   padding: 0.625em 0.875em;
   height: calc(1.5rem + 1.25rem + 2px);
   width: 100%;
-  border: 1px solid #006288;
+  border: 1px solid #134F5C;
   background-color: #fff;
   box-shadow: none;
   -moz-appearance: none;
@@ -576,35 +588,37 @@ a {
   appearance: none;
   min-width: 0;
   flex-grow: 1; }
-  .c-input:focus {
-    box-shadow: 0 0 6px rgba(0, 98, 136, 0.5);
-    outline: none;
-    outline-offset: -4px;
-    border: 1px dashed #006288; }
-  .c-input:invalid, .c-input.c-input--invalid {
+  .c-input:focus:not([readonly]) {
+    box-shadow: 0 0 4px #AAFFEC;
+    outline: 1px dashed rgba(19, 79, 92, 0.4);
+    outline-offset: -4px; }
+  .c-input[readonly], .c-input[disabled] {
+    background: #EFEFEF; }
+    .c-input[readonly]:focus, .c-input[disabled]:focus {
+      outline: none; }
+  .c-input--success {
+    background-color: #CAF3C8;
+    border-color: #05573B;
+    color: #05573B; }
+    .c-input--success:focus {
+      outline-color: #05573B; }
+  .c-input--warning, .c-input:invalid, .c-input.c-input--invalid {
+    background-color: #FCE0DC;
     border-color: #BB254D;
-    box-shadow: 0 0 4px rgba(187, 37, 77, 0.5);
     color: #BB254D; }
-  .c-input[readonly] {
-    background: transparent;
-    border-color: #363D43; }
-  .c-input[disabled], .c-input.c-input--disabled {
-    background: #363D43; }
-    .c-input[disabled]:focus, .c-input.c-input--disabled:focus {
-      outline: 0;
-      box-shadow: none; }
-  .c-input--condensed {
-    padding: 0.3125em 0.625em;
-    height: calc(1.5rem + 0.625rem + 2px); }
-  .c-input--block {
-    display: block;
-    width: 100%;
-    text-align: center; }
+    .c-input--warning:focus, .c-input:invalid:focus, .c-input.c-input--invalid:focus {
+      outline-color: #BB254D; }
 
 .c-label {
-  color: #363D43;
+  font-size: 1.125rem;
+  color: #6D7278;
+  font-weight: 700;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 0.5rem; }
 
 .c-text {
   margin: 0;
