@@ -1,4 +1,5 @@
 .c-headline {
+  $block: &;
   font-weight: $font-weight-bold;
   margin: 0;
   padding: 0;
@@ -15,38 +16,30 @@
     text-align: right;
   }
 
-  &--xxl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  &--xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
   &--lg {
-    font-size: 3rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 
   &--md {
-    font-size: 2.25rem;
-    line-height: 1;
+    font-size: 1.5rem;
+    line-height: 1.825rem;
   }
 
   &--sm {
-    font-size: 1.875rem;
-    line-height: 1;
-  }
+    font-size: 1.125rem;
+    line-height: 1.5rem;
 
-  &--xs {
-    font-size: 1.5rem;
-    line-height: 1;
-  }
+    &#{$block}--neutral {
+      color: $color-neutral
+    }
 
-  &--xxs {
-    font-size: 1.25rem;
-    line-height: 1;
+    &#{$block}--success {
+      color: $color-success
+    }
+
+    &#{$block}--warning {
+      color: $color-warning
+    }
   }
 }
