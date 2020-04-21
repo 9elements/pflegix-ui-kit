@@ -1,0 +1,28 @@
+.c-card {
+  background-color: $color-white;
+  border-radius: $border-radius;
+  box-shadow: 0 8px 14px -6px rgba(0,0,0,0.30);
+  border-radius: $border-radius;
+
+  &__header {
+    padding: $spacing-sm;
+    background-color: $color-gray;
+    border-radius: $border-radius $border-radius 0 0;
+  }
+
+  &__title {
+    color: $color-white;
+  }
+
+  &__body {
+    padding: $spacing-sm;
+  }
+
+  &__subtitle {
+    color: $color-gray-70;
+  }
+
+  &__copy {
+    color: $color-gray-70;
+  }
+}

@@ -389,11 +389,6 @@ a {
   a:hover, a:active, a:focus {
     color: #191919; }
 
-.o-card {
-  background-color: #fff;
-  border-radius: 0.1875rem;
-  padding: 1.5rem; }
-
 /* ==========================================================================
    #CONTAINER-OBJECT
    ========================================================================== */
@@ -532,6 +527,24 @@ a {
   .c-button--block {
     display: block;
     width: 100%; }
+
+.c-card {
+  background-color: #fff;
+  border-radius: 0.1875rem;
+  box-shadow: 0 8px 14px -6px rgba(0, 0, 0, 0.3);
+  border-radius: 0.1875rem; }
+  .c-card__header {
+    padding: 1rem;
+    background-color: #363D43;
+    border-radius: 0.1875rem 0.1875rem 0 0; }
+  .c-card__title {
+    color: #fff; }
+  .c-card__body {
+    padding: 1rem; }
+  .c-card__subtitle {
+    color: #666666; }
+  .c-card__copy {
+    color: #666666; }
 
 .c-checkbox {
   display: flex;
