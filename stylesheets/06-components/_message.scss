@@ -1,0 +1,36 @@
+.c-message {
+  $block: &;
+  background-color: $color-neutral-light;
+  border: 1px solid $color-neutral;
+  border-radius: 0.5625rem;
+  position: relative;
+  padding: $spacing-sm;
+  cursor: pointer;
+  transition: background-color ease-out .2s;
+
+  &:hover {
+    background-color: $color-white;
+  }
+
+  &--success {
+    background-color: $color-success-light;
+    border: 1px solid $color-success;
+
+  }
+
+  &--warning {
+    background-color: $color-warning-light;
+    border: 1px solid $color-warning;
+  }
+
+  &__cross {
+    position: absolute;
+    top: $spacing-sm;
+    right: $spacing-sm;
+    width: 0.75rem;
+  }
+
+  &__title {
+    margin-bottom: $spacing-xs;
+  }
+}

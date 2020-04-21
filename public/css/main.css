@@ -683,6 +683,30 @@ a {
   padding: 0;
   margin-bottom: 0.5rem; }
 
+.c-message {
+  background-color: #EBF9FF;
+  border: 1px solid #006288;
+  border-radius: 0.5625rem;
+  position: relative;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color ease-out .2s; }
+  .c-message:hover {
+    background-color: #fff; }
+  .c-message--success {
+    background-color: #CAF3C8;
+    border: 1px solid #05573B; }
+  .c-message--warning {
+    background-color: #FCE0DC;
+    border: 1px solid #BB254D; }
+  .c-message__cross {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 0.75rem; }
+  .c-message__title {
+    margin-bottom: 0.5rem; }
+
 .c-radio {
   display: flex;
   align-items: center;
