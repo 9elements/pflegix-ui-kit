@@ -1,4 +1,4 @@
-.c-textarea {
+.px-c-textarea {
   display: block;
   font-size: 1em;
   font-weight: $font-weight-regular;
@@ -42,7 +42,7 @@
     }
   }
 
-  &--warning, &:invalid, &.c-input--invalid {
+  &--warning, &:invalid, &.px-c-input--invalid {
     background-color: $color-warning-light;
     border-color: $color-warning;
     color: $color-warning;
