@@ -706,6 +706,16 @@ a {
   padding: 0;
   margin-bottom: 0.5rem; }
 
+.px-c-link {
+  cursor: pointer;
+  font-weight: 400;
+  text-decoration: underline;
+  color: #134F5C;
+  transition: all ease 0.2s; }
+  .px-c-link:hover {
+    color: #191919;
+    text-decoration-color: #AAFFEC; }
+
 .px-c-message {
   background-color: #EBF9FF;
   border: 1px solid #006288;

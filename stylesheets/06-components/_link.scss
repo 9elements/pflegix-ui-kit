@@ -1,0 +1,12 @@
+.px-c-link {
+  cursor: pointer;
+  font-weight: $font-weight-regular;
+  text-decoration: underline;
+  color: $color-secondary;
+  transition: all ease 0.2s;
+
+  &:hover {
+    color: $color-black;
+    text-decoration-color: $color-primary;
+  }
+}
