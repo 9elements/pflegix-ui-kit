@@ -1,0 +1,54 @@
+.c-textarea {
+  display: block;
+  font-size: 1em;
+  font-weight: $font-weight-regular;
+  color: $color-black;
+  line-height: 1.5;
+  padding: 0.625em 0.875em;
+  min-height: calc(1.5rem + 1.25rem + 2px);
+  width: 100%;
+  border: 1px solid $color-secondary;
+  background-color: $color-white;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  min-width: 0;
+  flex-grow: 1;
+  resize: vertical;
+
+  &:focus:not([readonly]) {
+    box-shadow: 0 0 4px $color-primary;
+    outline: 1px dashed rgba($color-secondary, 0.4);
+    outline-offset: -4px;
+  }
+
+  &[readonly], &[disabled] {
+    background: $color-silver;
+    resize: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &--success {
+    background-color: $color-success-light;
+    border-color: $color-success;
+    color: $color-success;
+
+    &:focus {
+      outline-color: $color-success;
+    }
+  }
+
+  &--warning, &:invalid, &.c-input--invalid {
+    background-color: $color-warning-light;
+    border-color: $color-warning;
+    color: $color-warning;
+
+    &:focus {
+      outline-color: $color-warning;
+    }
+  }
+}

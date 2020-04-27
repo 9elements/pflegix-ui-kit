@@ -16,7 +16,6 @@
 
 // 03. Generic
 @import './03-generic/flex';
-@import './03-generic/input-group';
 @import './03-generic/normalize';
 @import './03-generic/padding';
 @import './03-generic/selection';
@@ -30,6 +29,7 @@
 
 // 05. Objects
 @import './05-objects/container';
+@import './05-objects/input-group';
 @import './05-objects/wrapper';
 @import './05-objects/stack';
 
@@ -46,6 +46,7 @@
 @import './06-components/message';
 @import './06-components/radio';
 @import './06-components/text';
+@import './06-components/textarea';
 
 // 99. Utilities
 @import './99-utilities/text';

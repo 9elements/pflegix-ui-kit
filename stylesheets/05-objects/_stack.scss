@@ -29,7 +29,11 @@
       padding: $spacing-xl/2 0;
     }
 
-    &--space-xs, &--space-md, &--space-lg, &--space-xl {
+    &--space-xs,
+    &--space-sm,
+    &--space-md,
+    &--space-lg,
+    &--space-xl {
       &:first-child {
         padding-top: 0;
       }
@@ -63,7 +67,11 @@
         padding: 0 $spacing-xl/2;
       }
 
-      &--space-xs, &--space-md, &--space-lg, &--space-xl{
+      &--space-xs,
+      &--space-sm,
+      &--space-md,
+      &--space-lg,
+      &--space-xl {
         &:first-child {
           padding-left: 0;
         }
@@ -74,19 +82,32 @@
     }
   }
 
-  &--start {
-    align-items: flex-start;
+  &--align {
+    &-start {
+      align-items: flex-start;
+    }
+
+    &-end {
+      align-items: flex-end;
+    }
+
+    &-center {
+      align-items: center;
+    }
   }
 
-  &--end {
-    align-items: flex-end;
-  }
+  &--justify {
+    &-start {
+      justify-content: flex-start;
+    }
 
-  &--align-center {
-    align-items: center;
-  }
-  &--justify-center {
-    justify-content: center;
+    &-end {
+      justify-content: flex-end;
+    }
+
+    &-center {
+      justify-content: center;
+    }
   }
 
   &--wrap {

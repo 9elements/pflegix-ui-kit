@@ -1,0 +1,24 @@
+.o-input-group {
+  &--inline {
+    display: flex;
+    align-items: center;
+
+    .c-label {
+      white-space: nowrap;
+      padding-right: 0.5em;
+      margin-bottom: 0;
+    }
+  }
+
+  &--inline-textarea {
+    display: flex;
+    align-items: flex-start;
+
+    .c-label {
+      white-space: nowrap;
+      padding-right: $spacing-xs;
+      padding-top: $spacing-xs;
+      margin-bottom: 0;
+    }
+  }
+}

@@ -191,19 +191,19 @@
         <h2>Inputs</h2>
         <div class="o-stack">
           <div class="o-stack__item--space-xs">
-            <input type="text" id="styleguide-input-1" class="c-input" value="neutral"/>
+            <input type="text" id="styleguide-input-1" class="c-input" placeholder="neutral"/>
           </div>
           <div class="o-stack__item--space-xs">
-            <input type="text" id="styleguide-input-readonly" class="c-input" readonly value="readonly"/>
+            <input type="text" id="styleguide-input-readonly" class="c-input" readonly placeholder="readonly"/>
           </div>
           <div class="o-stack__item--space-xs">
-            <input type="text" id="styleguide-input-disabled" class="c-input" disabled value="disabled"/>
+            <input type="text" id="styleguide-input-disabled" class="c-input" disabled placeholder="disabled"/>
           </div>
           <div class="o-stack__item--space-xs">
-            <input type="text" class="c-input c-input--success" id="text-input-success" value="Success"/>
+            <input type="text" class="c-input c-input--success" id="text-input-success" placeholder="Success"/>
           </div>
           <div class="o-stack__item--space-xs">
-            <input type="text" class="c-input c-input--warning" id="text-input-warning" value="Warning">
+            <input type="text" class="c-input c-input--warning" id="text-input-warning" placeholder="Warning">
           </div>
         </div>
 
@@ -212,15 +212,54 @@
         <h2>Input-Group</h2>
         <div class="o-stack">
           <div class="o-stack__item--space-sm">
-            <div class="g-input-group">
+            <div class="o-input-group">
               <label class="c-label" for="text-input">Label</label>
               <input type="text" class="c-input" id="text-input">
             </div>
           </div>
           <div class="o-stack__item--space-sm">
-            <div class="g-input-group g-input-group--inline">
+            <div class="o-input-group o-input-group--inline">
               <label class="c-label" for="text-input-inline">Inline Label</label>
               <input type="text" class="c-input" id="text-input-inline">
+            </div>
+          </div>
+        </div>
+
+        <br><hr><br>
+
+        <h2>Textareas</h2>
+        <div class="o-stack">
+          <div class="o-stack__item--space-xs">
+            <textarea type="text" id="styleguide-textarea-1" class="c-textarea" placeholder="neutral" rows="3"></textarea>
+          </div>
+          <div class="o-stack__item--space-xs">
+            <textarea type="text" id="styleguide-textarea-readonly" class="c-textarea" readonly placeholder="readonly" rows="3"></textarea>
+          </div>
+          <div class="o-stack__item--space-xs">
+            <textarea type="text" id="styleguide-textarea-disabled" class="c-textarea" disabled placeholder="disabled" rows="3"></textarea>
+          </div>
+          <div class="o-stack__item--space-xs">
+            <textarea type="text" class="c-textarea c-textarea--success" id="text-textarea-success" placeholder="Success" rows="3"></textarea>
+          </div>
+          <div class="o-stack__item--space-xs">
+            <textarea type="text" class="c-textarea c-textarea--warning" id="text-textarea-warning" placeholder="Warning" rows="3"></textarea>
+          </div>
+        </div>
+
+        <br><hr><br>
+
+        <h2>Input-Group Textarea</h2>
+        <div class="o-stack">
+          <div class="o-stack__item--space-sm">
+            <div class="o-input-group">
+              <label class="c-label" for="text-textarea">Label</label>
+              <textarea type="text" class="c-textarea" id="text-textarea" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="o-stack__item--space-sm">
+            <div class="o-input-group o-input-group--inline-textarea">
+              <label class="c-label" for="text-textarea-inline">Inline Label</label>
+              <textarea type="text" class="c-textarea" id="text-textarea-inline" rows="3"></textarea>
             </div>
           </div>
         </div>
