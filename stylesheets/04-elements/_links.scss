@@ -1,8 +1,8 @@
 a {
   @include on-event {
-    color: $color-black;
+    text-decoration: underline;
   }
 
   color: $color-secondary;
-  transition: color ease .2s;
+  text-decoration: none;
 }

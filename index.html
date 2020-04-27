@@ -358,7 +358,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
       <label class="px-c-checkbox" for="check-tick-2">
         <input type="checkbox" id="check-tick-2">
@@ -366,7 +366,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
 
       <p>No Label</p>
@@ -392,7 +392,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
       <label class="px-c-checkbox px-c-checkbox--readonly" for="check-tick-readonly-2">
         <input type="checkbox" id="check-tick-readonly-2" readonly onclick="return false;" onkeydown="return false;">
@@ -400,7 +400,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
 
       <p>Disabled</p>
@@ -410,7 +410,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
       <label class="px-c-checkbox px-c-checkbox--disabled" for="check-tick-disabled-2">
         <input type="checkbox" id="check-tick-disabled-2" disabled>
@@ -418,7 +418,7 @@
           <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
           <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
         </svg>
-        <span>Label</span>
+        <span class="px-c-checkbox__text">Label</span>
       </label>
 
       <br><hr><br>
@@ -562,6 +562,67 @@
           </figure>
         </div>
       </div>
+
+      <br><hr><br>
+
+      <h2>Registration Example</h2>
+
+      <article class="px-c-card">
+        <div class="px-c-card__header">
+          <h2 class="px-c-headline px-c-headline--sm px-c-card__title">Wir erstellen mit ihnen gemeinsam telefonisch ihre erste Anzeige.</h2>
+        </div>
+        <div class="px-c-card__body">
+          <div class="px-o-stack px-o-stack--align-end">
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <p class="px-c-text px-c-text--sm px-c-card__copy">Wir rufen sie gerne an und erstellen mit ihnen zusammen ihr Nutzerkonto und ihre erste Suchanzeige.</p>
+            </div>
+
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <div class="px-o-input-group">
+                <label class="px-c-label" for="first_name">Ihr Vorname</label>
+                <input type="text" class="px-c-input" id="first_name">
+              </div>
+            </div>
+
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <div class="px-o-input-group">
+                <label class="px-c-label" for="last_name">Ihr Nachname</label>
+                <input type="text" class="px-c-input" id="last_name">
+              </div>
+            </div>
+
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <div class="px-o-input-group">
+                <label class="px-c-label" for="e_mail">E-Mail-Adresse</label>
+                <input type="email" class="px-c-input" id="e_mail">
+              </div>
+            </div>
+
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <div class="px-o-input-group">
+                <label class="px-c-label" for="phone-number">Telefonnummer</label>
+                <input type="tel" class="px-c-input" id="phone-number">
+              </div>
+            </div>
+
+            <div class="px-o-stack__item--space-md px-o-stack__item--block">
+              <label class="px-c-checkbox" for="check-agb">
+                <input type="checkbox" id="check-agb">
+                <svg viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+                  <rect fill="#FFF" width="22" height="22" stroke-width="1" stroke="#006288" ></rect>
+                  <path class="tick" d="M4 10l5 5 9-9" fill="none" stroke-width="4" stroke="#FFF"></path>
+                </svg>
+                <span class="px-c-checkbox__text px-c-checkbox__text--show-all">Durch das Erstellen eines Kontos stimme ich den <a href='#'>Allgemeinen Geschäftsbedingungen (AGB)</a> und der <a href="#">Datenschutzerklärung</a> von Pflegix zu.</span>
+              </label>
+            </div>
+
+            <div class="px-o-stack__item--space-md">
+              <button type="submit" class="px-c-button" href="#">Beraten lassen</button>
+            </div>
+
+          </div>
+        </div>
+      </article>
 
     </main>
   </body>
