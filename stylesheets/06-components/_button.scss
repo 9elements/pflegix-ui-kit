@@ -18,6 +18,7 @@
   &:hover:not([disabled]) {
     outline: none;
     background-color: lighten($color: $color-primary, $amount: 10%);
+    text-decoration: none;
   }
 
   &:focus, &:active {

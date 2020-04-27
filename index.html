@@ -484,17 +484,123 @@
 
       <br><hr><br>
 
-      <h2>Card</h2>
+      <div style="background: #EFEFEF; padding: 1rem; margin: 0 -1rem;">
+        <h2>Card</h2>
 
-      <article class="px-c-card">
-        <div class="px-c-card__header">
-          <h2 class="px-c-headline px-c-headline--sm px-c-card__title">Card Title</h2>
+        <article class="px-c-card">
+          <header class="px-c-card__header">
+            <h2 class="px-c-headline px-c-headline--sm px-c-card__title">Card Title</h2>
+          </header>
+          <section class="px-c-card__body">
+            <h3 class="px-c-headline px-c-headline--sm px-c-card__subtitle">Card Subtitle</h3>
+            <p class="px-c-text px-c-text--sm px-c-card__copy">Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+          </section>
+        </article>
+
+        <h2>Booking Cards</h2>
+        <div class="px-o-stack">
+          <div class="px-o-stack__item--space-sm">
+            <article class="px-c-booking-card">
+              <header class="px-c-booking-card__header">
+                <figure class="px-c-avatar">
+                  <span class="px-c-badge px-c-badge--number px-c-avatar__badge">2</span>
+                  <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                    <g>
+                      <clipPath id="myMask">
+                        <circle cx="30" cy="30" r="30"/>
+                      </clipPath>
+                    </g>
+                    <image class="px-c-avatar__photo" clip-path="url(#myMask)" xlink:href="./public/assets/avatar-dummy.jpg" width="100%" height="100%"/>
+                  </svg>
+                </figure>
+
+                <div class="px-c-booking-card__header-info">
+                  <h3 class="px-c-headline px-c-headline--md">Jesse</h2>
+
+                  <div class="px-o-stack px-o-stack--horizontal">
+                    <div class="px-o-stack__item--space-xs">
+                      <span class="px-c-badge px-c-badge--success">laufend</span>
+                    </div>
+                    <div class="px-o-stack__item--space-xs">
+                      <p class="px-c-text px-c-text--sm px-c-booking-card__subtitle">5 Stunden/Woche</h2>
+                    </div>
+                  </div>
+
+                  <hr>
+                </div>
+              </header>
+              <section class="px-c-booking-card__body">
+                <table  class="px-c-booking-card__table">
+                  <tbody>
+                    <tr>
+                      <td class="px-c-text px-c-booking-card__table-key">Eff. Stundenlohn</td>
+                      <td class="px-c-text px-c-booking-card__table-value">26,40 €</td>
+                    </tr>
+                    <tr>
+                      <td class="px-c-text px-c-booking-card__table-key">Vsl. Kosten im April</td>
+                      <td class="px-c-text px-c-booking-card__table-value">528,00 €</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <footer class="px-c-booking-card__footer">
+                <a class="px-c-button px-c-button--block" href="#">Zur Buchung</a>
+              </footer>
+            </article>
+
+          </div>
+          <div class="px-o-stack__item--space-sm">
+            <article class="px-c-booking-card">
+              <header class="px-c-booking-card__header">
+                <figure class="px-c-avatar px-c-avatar--ghost">
+                  <!-- <span class="px-c-badge px-c-badge--number px-c-avatar__badge">2</span> -->
+                  <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+                    <g>
+                      <clipPath id="myMask">
+                        <circle cx="30" cy="30" r="30"/>
+                      </clipPath>
+                    </g>
+                    <image class="px-c-avatar__photo" clip-path="url(#myMask)" xlink:href="./public/assets/avatar-dummy.jpg" width="100%" height="100%"/>
+                  </svg>
+                </figure>
+
+                <div class="px-c-booking-card__header-info">
+                  <h3 class="px-c-headline px-c-headline--md">Max</h2>
+
+                  <div class="px-o-stack px-o-stack--horizontal">
+                    <div class="px-o-stack__item--space-xs">
+                      <span class="px-c-badge px-c-badge--warning">beendet</span>
+                    </div>
+                    <div class="px-o-stack__item--space-xs">
+                      <p class="px-c-text px-c-text--sm px-c-booking-card__subtitle">am 22.03.2020</h2>
+                    </div>
+                  </div>
+
+                  <hr>
+                </div>
+              </header>
+              <section class="px-c-booking-card__body">
+                <table  class="px-c-booking-card__table">
+                  <tbody>
+                    <tr>
+                      <td class="px-c-text px-c-booking-card__table-key">Eff. Stundenlohn</td>
+                      <td class="px-c-text px-c-booking-card__table-value">24,00 €</td>
+                    </tr>
+                    <tr>
+                      <td class="px-c-text px-c-booking-card__table-key">Gesamtkosten</td>
+                      <td class="px-c-text px-c-booking-card__table-value">96,00 €</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </section>
+              <footer class="px-c-booking-card__footer">
+                <a class="px-c-button px-c-button--block" href="#">Zur Buchung</a>
+              </footer>
+            </article>
+          </div>
         </div>
-        <div class="px-c-card__body">
-          <h3 class="px-c-headline px-c-headline--sm px-c-card__subtitle">Card Subtitle</h3>
-          <p class="px-c-text px-c-text--sm px-c-card__copy">Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-        </div>
-      </article>
+
+      </div>
 
       <br><hr><br>
 
@@ -540,10 +646,24 @@
         <div class="px-o-stack__item--space-sm">
           <figure class="px-c-avatar">
             <span class="px-c-badge px-c-badge--number px-c-avatar__badge">2</span>
-            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+            <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <g>
                 <clipPath id="myMask">
-                  <circle cx="28" cy="28" r="28"/>
+                  <circle cx="30" cy="30" r="30"/>
+                </clipPath>
+              </g>
+              <image class="px-c-avatar__photo" clip-path="url(#myMask)" xlink:href="./public/assets/avatar-dummy.jpg" width="100%" height="100%"/>
+            </svg>
+          </figure>
+        </div>
+
+        <div class="px-o-stack__item--space-sm">
+          <figure class="px-c-avatar px-c-avatar--ghost">
+            <!-- <span class="px-c-badge px-c-badge--number px-c-avatar__badge">2</span> -->
+            <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+              <g>
+                <clipPath id="myMask">
+                  <circle cx="30" cy="30" r="30"/>
                 </clipPath>
               </g>
               <image class="px-c-avatar__photo" clip-path="url(#myMask)" xlink:href="./public/assets/avatar-dummy.jpg" width="100%" height="100%"/>
@@ -553,11 +673,11 @@
 
         <div class="px-o-stack__item--space-sm">
           <figure class="px-c-avatar">
-            <span class="px-c-badge px-c-badge--number px-c-avatar__badge">2</span>
-            <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 56">
+            <span class="px-c-badge px-c-badge--number px-c-avatar__badge">23</span>
+            <svg width="60" height="60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
               <g>
                 <clipPath id="myMask">
-                  <circle cx="28" cy="28" r="28"/>
+                  <circle cx="30" cy="30" r="30"/>
                 </clipPath>
               </g>
               <image class="px-c-avatar__photo" clip-path="url(#myMask)" xlink:href="./public/assets/avatar-placeholder.png" width="100%" height="100%"/>
@@ -571,10 +691,10 @@
       <h2>Registration Example</h2>
 
       <article class="px-c-card">
-        <div class="px-c-card__header">
+        <header class="px-c-card__header">
           <h2 class="px-c-headline px-c-headline--sm px-c-card__title">Wir erstellen mit ihnen gemeinsam telefonisch ihre erste Anzeige.</h2>
-        </div>
-        <div class="px-c-card__body">
+        </header>
+        <section class="px-c-card__body">
           <div class="px-o-stack px-o-stack--align-end">
             <div class="px-o-stack__item--space-md px-o-stack__item--block">
               <p class="px-c-text px-c-text--sm px-c-card__copy">Wir rufen sie gerne an und erstellen mit ihnen zusammen ihr Nutzerkonto und ihre erste Suchanzeige.</p>
@@ -624,7 +744,7 @@
             </div>
 
           </div>
-        </div>
+        </section>
       </article>
 
     </main>
