@@ -36,7 +36,8 @@
     overflow: visible;
 
     .circle {
-      transition: r 0.2s ease-out;
+      transform-origin: center;
+      transition: transform ease 0.2s;
     }
   }
 
@@ -53,7 +54,7 @@
   }
 
   input:checked + svg .circle {
-    r: 6;
+    transform: scale(0.6, 0.6);
   }
 
   input:focus + svg {

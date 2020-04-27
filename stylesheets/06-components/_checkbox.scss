@@ -54,7 +54,7 @@
     opacity: 0;
     cursor: pointer;
 
-    &:disabled {
+    &[readonly], &[disabled] {
       pointer-events: none;
     }
   }

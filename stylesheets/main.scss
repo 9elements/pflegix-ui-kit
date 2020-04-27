@@ -2,51 +2,52 @@
 // Original post by Harry Roberts https://www.creativebloq.com/web-design/manage-large-css-projects-itcss-101517528
 
 // 01. Settings
-@import './01-settings/border';
-@import './01-settings/colors';
-@import './01-settings/spacing';
-@import './01-settings/typography';
-@import './01-settings/z-layers';
+@import "./01-settings/border";
+@import "./01-settings/colors";
+@import "./01-settings/spacing";
+@import "./01-settings/typography";
+@import "./01-settings/z-layers";
 
 // 02. Tools
-@import './02-tools/hidden';
-@import './02-tools/on-event';
-@import './02-tools/placeholder';
+@import "./02-tools/hidden";
+@import "./02-tools/on-event";
+@import "./02-tools/placeholder";
 
 // 03. Generic
-@import './03-generic/flex';
-@import './03-generic/normalize';
-@import './03-generic/padding';
-@import './03-generic/selection';
+@import "./03-generic/flex";
+@import "./03-generic/normalize";
+@import "./03-generic/padding";
+@import "./03-generic/selection";
 
 // 04. Elements
-@import './04-elements/all';
-@import './04-elements/body';
-@import './04-elements/divider';
-@import './04-elements/html';
-@import './04-elements/links';
+@import "./04-elements/all";
+@import "./04-elements/body";
+@import "./04-elements/divider";
+@import "./04-elements/html";
+@import "./04-elements/links";
 
 // 05. Objects
-@import './05-objects/container';
-@import './05-objects/input-group';
-@import './05-objects/wrapper';
-@import './05-objects/stack';
+@import "./05-objects/container";
+@import "./05-objects/input-group";
+@import "./05-objects/wrapper";
+@import "./05-objects/stack";
 
 // 06. Components
-@import './06-components/avatar';
-@import './06-components/badge';
-@import './06-components/button';
-@import './06-components/card';
-@import './06-components/checkbox';
-@import './06-components/headline';
-@import './06-components/icon';
-@import './06-components/input';
-@import './06-components/label';
-@import './06-components/message';
-@import './06-components/radio';
-@import './06-components/text';
-@import './06-components/textarea';
+@import "./06-components/avatar";
+@import "./06-components/badge";
+@import "./06-components/button";
+@import "./06-components/card";
+@import "./06-components/checkbox";
+@import "./06-components/headline";
+@import "./06-components/icon";
+@import "./06-components/input";
+@import "./06-components/label";
+@import "./06-components/message";
+@import "./06-components/radio";
+@import "./06-components/select";
+@import "./06-components/text";
+@import "./06-components/textarea";
 
 // 99. Utilities
-@import './99-utilities/text';
-@import './99-utilities/visibility';
+@import "./99-utilities/text";
+@import "./99-utilities/visibility";

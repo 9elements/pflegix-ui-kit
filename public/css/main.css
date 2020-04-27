@@ -608,7 +608,7 @@ a {
     height: 1.375em;
     opacity: 0;
     cursor: pointer; }
-    .px-c-checkbox input:disabled {
+    .px-c-checkbox input[readonly], .px-c-checkbox input[disabled] {
       pointer-events: none; }
   .px-c-checkbox input:checked + svg rect {
     fill: #134F5C; }
@@ -757,7 +757,8 @@ a {
     margin-right: 0.6em;
     overflow: visible; }
     .px-c-radio svg .circle {
-      transition: r 0.2s ease-out; }
+      transform-origin: center;
+      transition: transform ease 0.2s; }
   .px-c-radio input {
     position: absolute;
     width: 1.375em;
@@ -767,7 +768,7 @@ a {
     .px-c-radio input:disabled {
       pointer-events: none; }
   .px-c-radio input:checked + svg .circle {
-    r: 6; }
+    transform: scale(0.6, 0.6); }
   .px-c-radio input:focus + svg {
     outline: 1px dashed #134F5C;
     outline-offset: 2px; }
@@ -775,6 +776,70 @@ a {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap; }
+
+.px-c-select {
+  /* class applies to select element itself, not a wrapper element */
+  display: block;
+  font-size: 1em;
+  font-weight: 400;
+  color: #191919;
+  line-height: 1.5;
+  padding: 0.6em 1.4em 0.5em 0.8em;
+  padding: 0.625em 0.875em;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 0;
+  border: 1px solid #134F5C;
+  box-shadow: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg version='1.1' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg transform='translate(-281 -51)'%3E%3Cg transform='translate(0 32)'%3E%3Crect x='.5' y='.5' width='306' height='43' stroke='%23134F5C'/%3E%3Cpolygon transform='translate(286 22) scale(1 -1) translate(-286 -22)' points='286 19 291 25 281 25' fill='%23134F5C'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 0.7em top 50%;
+  background-size: 0.65em auto; }
+  .px-c-select::-ms-expand {
+    display: none; }
+  .px-c-select:focus:not([readonly]) {
+    border-color: #aaa;
+    box-shadow: 0 0 4px #AAFFEC;
+    box-shadow: 0 0 0 4px -moz-mac-focusring;
+    outline: 1px dashed rgba(19, 79, 92, 0.4);
+    outline-offset: -4px; }
+  .px-c-select[aria-disabled="true"], .px-c-select[readonly], .px-c-select[disabled] {
+    pointer-events: none;
+    background: #EFEFEF; }
+    .px-c-select[aria-disabled="true"]:focus, .px-c-select[readonly]:focus, .px-c-select[disabled]:focus {
+      outline: none; }
+  .px-c-select option {
+    font-weight: 400; }
+  .px-c-select--success {
+    background-color: #CAF3C8;
+    border-color: #05573B;
+    color: #05573B; }
+    .px-c-select--success:focus {
+      outline-color: #05573B; }
+  .px-c-select--warning, .px-c-select:invalid, .px-c-select.px-c-input--invalid {
+    background-color: #FCE0DC;
+    border-color: #BB254D;
+    color: #BB254D; }
+    .px-c-select--warning:focus, .px-c-select:invalid:focus, .px-c-select.px-c-input--invalid:focus {
+      outline-color: #BB254D; }
+
+/* Hide arrow icon in IE browsers */
+/* Hover style */
+/* Focus style */
+/* Set options to normal weight */
+/* Support for rtl text, explicit support for Arabic and Hebrew */
+*[dir="rtl"] .select-css {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em; }
+
+:root:lang(ar) .select-css,
+:root:lang(iw) .select-css {
+  background-position: left 0.7em top 50%, 0 0;
+  padding: 0.6em 0.8em 0.5em 1.4em; }
 
 .px-c-text {
   font-weight: 400;
